@@ -1,0 +1,8 @@
+{
+  "name": "react-without-cra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hwookim/react-without-cra.git",
+  "author": "hwookim <gusdn9754@gmail.com>",
+  "license": "MIT"
+}
