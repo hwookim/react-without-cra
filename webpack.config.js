@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const mode = process.env.NODE_ENV || "development";
-const isProd = mode === "production";
+const isDev = mode === "development";
 
 module.exports = {
   mode,
@@ -28,16 +28,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
-      minify: isProd
-        ? {
-            collapseWhitespace: true,
-            removeComments: true,
-          }
-        : false,
+      template: "./public/index.html",
+      minify: isDev || {
+        collapseWhitespace: true,
+        removeComments: true,
+      },
     }),
   ],
-  devtool: "inline-source-map",
+  devtool: isDev && "inline-source-map",
   devServer: {
     contentBase: "./public",
     host: "localhost",
