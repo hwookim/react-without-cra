@@ -4,7 +4,12 @@ export interface IButton {
   text: string;
 }
 
+const style: React.CSSProperties = {
+  backgroundColor: "red",
+};
+
 export default function Button(props: IButton) {
   const { text } = props;
-  return <button>{text}</button>;
+
+  return <button style={style}>{text}</button>;
 }
