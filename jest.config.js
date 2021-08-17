@@ -7,6 +7,7 @@ module.exports = {
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/src/$1",
     "^@test/(.*)$": "<rootDir>/test/$1",
+    "^@stories/(.*)$": "<rootDir>/stories/$1",
   },
   testMatch: [
     "<rootDir>/**/*.test.(js|jsx|ts|tsx)",
