@@ -6,6 +6,7 @@ export interface IButton {
 
 const style: React.CSSProperties = {
   backgroundColor: "red",
+  fontSize: "2rem",
 };
 
 export default function Button(props: IButton) {
