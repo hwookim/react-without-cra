@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 
 describe("Button", () => {
   test("include text", () => {
-    const text = "hi";
+    const text = "button text";
     const { getByText } = render(<Button text={text} />);
     getByText(text);
   });
