@@ -9,9 +9,7 @@
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --config webpack.dev.js",
     "test": "jest --watch",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=bbe61f737944"
+    "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
