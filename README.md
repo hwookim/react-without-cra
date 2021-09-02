@@ -10,3 +10,21 @@
 
 ![](https://img.shields.io/badge/-Prettier-F7B93E?&logo=Prettier&logoColor=white)
 ![](https://img.shields.io/badge/-ESLint-4B32C3?&logo=ESLint&logoColor=white)
+
+## Run
+
+```shell
+yarn
+
+# build production
+yarn prod
+
+# start with webpack-dev-server
+yarn dev
+
+# test with jest
+yarn test
+
+# open storybook
+yarn storybook
+```
